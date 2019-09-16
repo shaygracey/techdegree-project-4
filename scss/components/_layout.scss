@@ -1,7 +1,25 @@
 /* ============================================= */
   /*              Grid System                      */
   /* ============================================= */
-  
+  //color map
+  $colors: ('info' $info-light,
+           'warning' $warning-light,
+           'primary' $color-primary-light,
+           'secondary' $color-secondary,
+           'secondarylight' $color-secondary-light,
+           'error' $error-light,
+           'success' $success-light,
+  );
+
+
+  //column loop
+  @for $i from 1 through 12 {
+    .theme.col-#{$i} {
+      background-color: 
+    }
+  }
+
+
   .container {
     padding: 0 10px;
 
@@ -37,7 +55,7 @@
   }
   
   .theme.col-3 {
-    background-color: #deb2ee;
+    background-color: $info-light;
   }
   
   .theme.col-4 {
@@ -45,7 +63,7 @@
   }
   
   .theme.col-5 {
-    background-color: #88d9a0;
+    background-color: $success-light;
   }
   
   .theme.col-6 {
@@ -53,11 +71,11 @@
   }
   
   .theme.col-7 {
-    background-color: #ec9fa3;
+    background-color: $error-light;
   }
   
   .theme.col-8 {
-    background-color: #fd9f85;
+    background-color: $warning-light;
   }
   
   .theme.col-9 {
