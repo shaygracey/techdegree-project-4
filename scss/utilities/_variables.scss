@@ -1,2 +1,12 @@
 $color-primary: #58e1c1;
 $color-secondary: #51ddfc;
+$success:#63cc82;
+$error:#e4757a;
+$warning:#fd7856;
+$info:#927bc1;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$success-light: lighten($success, 10%);
+
+$breakpoint: 768px;

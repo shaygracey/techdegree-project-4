@@ -3,13 +3,7 @@
   /* ============================================= */
   @media (min-width: 768px) {
   
-    .container {
-      max-width: 1400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
+   
     .centered {
       display: block;
       margin-left: auto;
@@ -83,11 +77,13 @@
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
+
+      &-link {
+        flex-basis: 100px;
+      }
     }
     
-    .nav-link {
-      flex-basis: 100px;
-    }
+  
     
     .btn {
       padding: 10px 30px;
