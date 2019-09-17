@@ -14,3 +14,15 @@ $info-light: lighten($info, 20%);
 $breakpoint: 768px;
 
 $font: 'Lato', sans-serif;
+
+//button color map
+$button-colors: (
+  default: $color-secondary,
+  success: $success,
+  error: $error,
+  warning: $warning,
+  info: $info,
+);
+
+
+

@@ -11,26 +11,20 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+
+    @each $key, $color in $button-colors {
+      &.#{$key} {
+        background-color: $color;
+       
+        &:hover{
+          background-color: lighten($color, 15%);
+          transition: background-color .5s;
+        }
+      }
+      
+}
   }
   
-  .default {
-    background-color: $color-secondary;
-  }
-  
-  .error {
-    background-color: $error;
-  }
-  
-  .info {
-    background-color: $info;
-  }
-  
-  .success {
-    background-color: $success;
-  }
-  
-  .warning {
-    background-color: $warning;
-  }
+
   
   

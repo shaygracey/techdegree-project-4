@@ -1,25 +1,7 @@
 /* ============================================= */
   /*              Grid System                      */
   /* ============================================= */
-  //color map
-  $colors: ('info' $info-light,
-           'warning' $warning-light,
-           'primary' $color-primary-light,
-           'secondary' $color-secondary,
-           'secondarylight' $color-secondary-light,
-           'error' $error-light,
-           'success' $success-light,
-  );
-
-
-  //column loop
-  @for $i from 1 through 12 {
-    .theme.col-#{$i} {
-      background-color: 
-    }
-  }
-
-
+  
   .container {
     padding: 0 10px;
 
@@ -33,8 +15,7 @@
   }
   
   .row {
-    display: flex;
-    flex-direction: column;
+    @include flexy;
     padding: 1em 10px;
   }
   
